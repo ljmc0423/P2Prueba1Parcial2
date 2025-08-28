@@ -28,7 +28,8 @@ public class TestMyFile {
                     + "\n4. Crear folder"
                     + "\n5. Borrar"
                     + "\n6. Imprimir contenidos"
-                    + "\n7. Salir"
+                    + "\n7. Mostrar directorio"
+                    + "\n8. Salir"
                     + "\nElija una opcion.");
             try {
                 option = lea.nextInt();
@@ -51,14 +52,15 @@ public class TestMyFile {
                         break;
                     case 5:
                         mf.borrarArchivo(mf.getFile());
-                            
+
                         break;
                     case 6:
                         mf.tree();
-                        
+
                         break;
-                        
-                        
+                    case 7:
+                        mf.mostrarDir();
+
                 }
             } catch (InputMismatchException e) {
                 lea.nextLine();
@@ -69,7 +71,7 @@ public class TestMyFile {
                 System.out.println("Error en Disco: " + e.getMessage());
             }
 
-        } while (option != 7);
+        } while (option != 8);
 
     }
 
