@@ -60,7 +60,8 @@ public class TestMyFile {
                         break;
                     case 7:
                         mf.mostrarDir();
-
+                        
+                        break;
                 }
             } catch (InputMismatchException e) {
                 lea.nextLine();
